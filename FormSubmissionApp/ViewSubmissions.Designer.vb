@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class ViewSubmissions
     Inherits System.Windows.Forms.Form
 
@@ -64,7 +64,7 @@ Partial Class ViewSubmissions
         ' 
         nameLabel.AutoSize = True
         nameLabel.Font = New Font("Segoe UI", 12F)
-        nameLabel.Location = New Point(171, 59)
+        nameLabel.Location = New Point(171, 70)
         nameLabel.Name = "nameLabel"
         nameLabel.Size = New Size(52, 21)
         nameLabel.TabIndex = 2
@@ -113,7 +113,8 @@ Partial Class ViewSubmissions
         ' 
         nameTxt.BackColor = SystemColors.ActiveBorder
         nameTxt.BorderStyle = BorderStyle.FixedSingle
-        nameTxt.Location = New Point(317, 54)
+        nameTxt.Font = New Font("Segoe UI", 12F)
+        nameTxt.Location = New Point(317, 68)
         nameTxt.Multiline = True
         nameTxt.Name = "nameTxt"
         nameTxt.ReadOnly = True
@@ -125,7 +126,8 @@ Partial Class ViewSubmissions
         ' 
         emailTxt.BackColor = SystemColors.ActiveBorder
         emailTxt.BorderStyle = BorderStyle.FixedSingle
-        emailTxt.Location = New Point(317, 98)
+        emailTxt.Font = New Font("Segoe UI", 12F)
+        emailTxt.Location = New Point(317, 112)
         emailTxt.Multiline = True
         emailTxt.Name = "emailTxt"
         emailTxt.ReadOnly = True
@@ -137,7 +139,8 @@ Partial Class ViewSubmissions
         ' 
         phoneTxt.BackColor = SystemColors.ActiveBorder
         phoneTxt.BorderStyle = BorderStyle.FixedSingle
-        phoneTxt.Location = New Point(317, 146)
+        phoneTxt.Font = New Font("Segoe UI", 12F)
+        phoneTxt.Location = New Point(317, 155)
         phoneTxt.Multiline = True
         phoneTxt.Name = "phoneTxt"
         phoneTxt.ReadOnly = True
@@ -149,7 +152,8 @@ Partial Class ViewSubmissions
         ' 
         githubTxt.BackColor = SystemColors.ActiveBorder
         githubTxt.BorderStyle = BorderStyle.FixedSingle
-        githubTxt.Location = New Point(317, 189)
+        githubTxt.Font = New Font("Segoe UI", 12F)
+        githubTxt.Location = New Point(317, 196)
         githubTxt.Multiline = True
         githubTxt.Name = "githubTxt"
         githubTxt.ReadOnly = True
@@ -161,7 +165,8 @@ Partial Class ViewSubmissions
         ' 
         timerTxt.BackColor = SystemColors.ActiveBorder
         timerTxt.BorderStyle = BorderStyle.FixedSingle
-        timerTxt.Location = New Point(317, 255)
+        timerTxt.Font = New Font("Segoe UI", 12F)
+        timerTxt.Location = New Point(317, 251)
         timerTxt.Multiline = True
         timerTxt.Name = "timerTxt"
         timerTxt.ReadOnly = True
