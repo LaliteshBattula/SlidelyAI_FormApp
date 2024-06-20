@@ -14,19 +14,23 @@ Public Class ViewSubmissions
     Private Async Function LoadSubmissions() As Task
         ' Fetch submissions from the backend
         Dim index As Integer = 0
-        While True
+        Dim missingCount As Integer = 0 ' For checking if there are any submissions without consecutive indexes
+        Dim maxConsecutiveMisses As Integer = 5 ' Check for next 5 indexes to get any submission
+    
+        While missingCount < maxConsecutiveMisses
             Dim submissionJson = Await ApiClient.GetSubmission(index)
             If submissionJson IsNot Nothing Then
                 Dim submission As Submission = JsonConvert.DeserializeObject(Of Submission)(submissionJson)
                 If submission IsNot Nothing Then
                     submissions.Add(submission)
-                    index += 1
+                    missingCount = 0 ' Reset the missing count if a valid submission is found
                 Else
-                    Exit While
+                    missingCount += 1
                 End If
             Else
-                Exit While
+                missingCount += 1
             End If
+            index += 1
         End While
     End Function
 
