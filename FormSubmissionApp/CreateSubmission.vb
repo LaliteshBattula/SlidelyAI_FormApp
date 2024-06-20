@@ -1,4 +1,4 @@
-﻿Imports System.Threading.Tasks
+Imports System.Threading.Tasks
 Imports System.Diagnostics
 Public Class CreateSubmission
     Private stopwatch As New Stopwatch()
@@ -7,6 +7,12 @@ Public Class CreateSubmission
         Dim success = Await ApiClient.SubmitForm(txtName.Text, txtEmail.Text, txtPhone.Text, txtGithub.Text, timerLabel.Text)
         If success Then
             MessageBox.Show("Submission successful!")
+            txtName.Text = String.Empty
+            txtEmail.Text = String.Empty
+            txtPhone.Text = String.Empty
+            txtGithub.Text = String.Empty
+            timerLabel.Text = "00:00:00"
+            stopwatch.Reset()
         Else
             MessageBox.Show("Submission failed!")
         End If
@@ -14,6 +20,7 @@ Public Class CreateSubmission
     Private Sub CreateSubmissionForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         timer.Interval = 1000 ' Set the interval to 1 second
         timer.Start()
+        stopwatch.Start()
         Me.KeyPreview = True ' This ensures the form receives key events before any control
     End Sub
     Private Sub CreateSubmissionForm_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
