@@ -1,4 +1,4 @@
-﻿Imports System.Threading.Tasks
+Imports System.Threading.Tasks
 Imports Newtonsoft.Json
 
 Public Class ViewSubmissions
@@ -16,7 +16,7 @@ Public Class ViewSubmissions
         Dim index As Integer = 0
         Dim missingCount As Integer = 0 ' For checking if there are any submissions without consecutive indexes
         Dim maxConsecutiveMisses As Integer = 5 ' Check for next 5 indexes to get any submission
-    
+
         While missingCount < maxConsecutiveMisses
             Dim submissionJson = Await ApiClient.GetSubmission(index)
             If submissionJson IsNot Nothing Then
@@ -33,7 +33,6 @@ Public Class ViewSubmissions
             index += 1
         End While
     End Function
-
     Private Sub DisplaySubmission()
         If submissions.Count > 0 Then
             Dim currentSubmission As Submission = submissions(currentIndex)
