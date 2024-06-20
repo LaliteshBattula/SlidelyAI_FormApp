@@ -18,8 +18,8 @@ Here are some screenshots of the application in action:
 
 ![base_page](https://github.com/LaliteshBattula/SlidelyAI_FormApp/assets/127239215/d37b7e74-9f53-444d-a8cb-ca99775026d9)
 - base page after app starts running
-
-![view_page](https://github.com/LaliteshBattula/SlidelyAI_FormApp/assets/127239215/7e320c6d-9a08-49ea-b849-f8e784ea8970)
+  
+![viewpage](https://github.com/LaliteshBattula/SlidelyAI_FormApp/assets/127239215/df75d82c-78f4-439b-9949-07300cc73e18)
 - view page for viewing data of submissions with previous, next and delete buttons
 
 ![create_page](https://github.com/LaliteshBattula/SlidelyAI_FormApp/assets/127239215/3bc94f31-7599-4b4e-a547-91f24d014bb5)
